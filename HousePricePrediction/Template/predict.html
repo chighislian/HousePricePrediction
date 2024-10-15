@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Predict</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <style>
+         .main{
+            position:fixed;
+            top:80px;
+            left:300px;
+            width:700px;
+            background-color:gainsboro;
+            align-items:center;
+            border-radius:5%;
+        }
+        div{
+            padding:14px;
+        }
+        input[type=submit]{
+            background-color:Black;
+            color:white;
+            cursor:pointer;
+            padding: 16px 32px;
+        }
+        h1{
+            font-size:40px;
+        }
+        h2{
+            font-size:30px;
+            color:DarkRed;
+        }
+
+
+
+
+        body{
+           background-image: url('/static/img/pexels-danielabsi-952670.jpg');
+           background-size: cover;
+           background-attachment:fixed;
+           background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body style="text-align:center">
+    <div class="main">
+        <h1>Please enter the following values</h1>
+        <form action="result">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:Bisque;">
+                    <p>State</p>
+                    <input type="text" name="n1">
+                </div>
+                <div class="col-sm-4" style="background-color:LightPink;">
+                    <p>Town</p>
+                    <input type="text" name="n2">
+                </div>
+                <div class="col-sm-4" style="background-color:DarkSeaGreen;">
+                    <p>Tittle</p>
+                    <input type="text" name="n3">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-4" style="background-color:RosyBrown;">
+                    <p>Toilets</p>
+                    <input type="text" name="n4">
+                </div>
+                <div class="col-sm-4" style="background-color:Turquoise;">
+                    <p>Bathrooms</p>
+                    <input type="text" name="n5">
+                </div>
+                <div class="col-sm-4" style="background-color:DarkSeaGreen;">
+                    <p>Bedrooms</p>
+                    <input type="text" name="n6">
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="PREDICT">
+            </div>
+        </form>
+        <div class="row">
+            <h2>{{result2}}</h2>
+        </div>
+
+    </div>
+
+</body>
+</html>
