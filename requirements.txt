@@ -7,3 +7,4 @@ scikit-learn
 pandas>=2.3.2
 numpy
 matplotlib
+seaborn
