@@ -1,1 +1,1 @@
-WSGI_APPLICATION = 'HousePricePrediction.wsgi.application'
+web: gunicorn HousePricePrediction.wsgi:application --chdir HousePricePrediction
