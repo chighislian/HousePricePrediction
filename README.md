@@ -1,4 +1,4 @@
-# 🏠 House Price Prediction (Nigeria)
+q		# 🏠 House Price Prediction (Nigeria)
 
 ## Project Overview
 
@@ -50,15 +50,30 @@ Workflow
 ## 📁 Project documentation
 
 
-```text
+````
 HousePricePrediction/
 │
-├── HousePricePrediction/
-├── static/
-├── nigeria_houses_data.csv
-├── requirements.txt
-└── README.md
-```
+├── HousePricePrediction/           # Project Core
+│   ├── settings.py                 # Project configuration & app registration
+│   ├── urls.py                     # Main routing and endpoint definitions
+│   └── wsgi.py                     # Gateway interface for web deployment
+│
+├── static/                         # Assets Folder
+│   ├── css/                        # Custom styling (Bootstrap/Tailwind)
+│   ├── js/                         # Frontend logic and form handling
+│   └── img/                        # Project screenshots and icons
+│
+├── templates/                      # HTML Layouts
+│   ├── index.html                  # Main prediction dashboard
+│   └── result.html                 # Prediction output display
+│
+├── nigeria_houses_data.csv         # Raw Dataset (Houses in Nigeria)
+├── state_mapping.json              # Encoding for categorical location data
+├── db.sqlite3                      # Database for local storage/metadata
+├── requirements.txt                # List of Python dependencies
+├── manage.py                       # Django administrative command-line tool
+└── README.md                       # Project documentation (Markdown)
+````
 
 
 
